@@ -1,10 +1,11 @@
 # swammerdami-website
-A static site for Swammerdami LLC. The main site includes three pages: Home, Video, and AV Archiving. It uses plain HTML and CSS with an early-2000s / late-90s Web 1.0 feel.
+A static site for Swammerdami LLC. The main site includes four pages: Home, Video, Sound, and AV Archiving. It uses plain HTML and CSS with an early-2000s / late-90s Web 1.0 feel.
 
 ## Pages
 
 - `index.html` - home page
 - `video.html` - video projects
+- `sound.html` - sound projects and updates
 - `archiving.html` - AV archival projects and notes
 
 ## Adding a page
