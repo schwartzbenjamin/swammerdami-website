@@ -45,7 +45,6 @@ nav a:active .nav-symbol { box-shadow: 1px 1px 0 #5d6268, inset 0 0 0 1px rgba(2
 nav a:hover, nav a.active { color: var(--accent); background: transparent; border-color: transparent; }
 nav .nav-indicator { width: 12px; height: 7px; margin-top: 1px; border: 1px solid #4e5358; border-radius: 1px; background: #25282b; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .2); }
 nav a.active .nav-indicator { border-color: #398b48; background: #61d476; box-shadow: 0 0 5px rgba(97, 212, 118, .7); }
-nav a.nav-sound .nav-indicator { border-color: #8b3232; background: #4a2528; }
 nav a.nav-sound.active .nav-indicator { border-color: #a93030; background: #f04444; box-shadow: 0 0 5px rgba(240, 68, 68, .7); }
 nav .nav-symbol { position: relative; display: grid; flex: 0 0 42px; width: 42px; height: 42px; place-items: center; color: #202327; border: 2px solid #7d8288; border-radius: 4px; background: #f4f4ef; box-shadow: 2px 2px 0 #5d6268, inset 0 0 0 1px rgba(255, 255, 255, .7); }
 nav .nav-symbol--stop { background: #5aaee6; }
@@ -59,8 +58,8 @@ nav .nav-symbol--reverse::after { left: 17px; }
 main { padding: 28px 0 70px; }
 .page-heading { display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
 .page-intro { margin: 22px 0 42px; }
-.page-intro-with-art { display: grid; grid-template-columns: minmax(0, 1fr) 150px; gap: 28px; align-items: center; }
-.page-intro-with-art img { display: block; width: 150px; height: 150px; object-fit: contain; }
+.page-intro-with-art { display: grid; grid-template-columns: minmax(0, 1fr) 100px; gap: 28px; align-items: start; }
+.page-intro-with-art img { display: block; width: 100px; height: 100px; object-fit: contain; }
 .home-intro { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 28px; align-items: start; }
 .headshot-placeholder { display: grid; aspect-ratio: 1; place-items: center; border: 2px dotted var(--line); color: var(--muted); font-size: .72rem; letter-spacing: .08em; }
 .eyebrow { margin: 0; color: var(--accent); font-size: .72rem; letter-spacing: .12em; }
@@ -93,9 +92,12 @@ a { color: var(--accent); }
 .project-list p { margin: 0; }
 .project-videos { display: grid; gap: 18px; margin-top: 18px; }
 .project-videos--four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.project-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(80px, 100px); gap: 22px; align-items: start; margin-top: 18px; }
+.project-feature img { display: block; width: 100%; height: auto; border: 2px solid var(--line); }
+.project-feature p { margin: 0; }
 .project-video { margin-top: 18px; aspect-ratio: 16 / 9; width: 100%; }
 .project-videos .project-video { margin-top: 0; }
-.project-video iframe { display: block; width: 100%; height: 100%; border: 2px solid var(--line); }
+.project-video iframe { display: block; width: 100%; height: 100%; border: 2px solid var(--line); border-radius: 6px; }
 .project-number { color: var(--accent); }
 .collaborators-section { padding-top: 22px; }
 .collaborators-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 28px; margin: 0; padding-left: 22px; }
@@ -110,12 +112,14 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
   .title-row { align-items: flex-start; flex-direction: column; gap: 8px; }
   .page-heading { flex-direction: column; gap: 4px; }
   .page-intro-with-art { grid-template-columns: 1fr; gap: 18px; }
-  .page-intro-with-art img { width: 110px; height: 110px; }
+  .page-intro-with-art img { width: 100px; height: 100px; }
   .home-intro { grid-template-columns: 1fr; }
   .headshot-placeholder { width: min(180px, 100%); }
   .archive-list li { grid-template-columns: 1fr; gap: 10px; }
   .contact-layout { grid-template-columns: 1fr; gap: 28px; }
   .project-list article { grid-template-columns: 30px 1fr; }
+  .project-feature { grid-template-columns: 1fr; gap: 14px; }
+  .project-feature img { width: min(100px, 100%); }
   .project-videos--four { grid-template-columns: 1fr; }
   .collaborators-list { grid-template-columns: 1fr; }
   .project-state { grid-column: 2; }
