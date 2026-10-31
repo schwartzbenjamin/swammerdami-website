@@ -126,6 +126,7 @@ a { color: var(--accent); }
 .collaborators-notes > .post-it { justify-self: center; }
 .collaborators-note { background: var(--ps-pink); font-size: .9rem; }
 .collaborators-note p { margin: 0 0 12px; }
+.collaborators-note > p { font-size: 1.05rem; }
 .collaborators-playlist-note { display: flex; flex-direction: column; justify-content: center; transform: rotate(-1deg); background: var(--ps-yellow); text-align: center; }
 .collaborators-list { display: grid; grid-template-columns: 1fr; gap: 8px; margin: 0; padding-left: 22px; }
 .collaborators-list li { padding-left: 4px; }
